@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.aviya.takeandgo2.controller.fragment.FreeCarsFragment"
+    android:weightSum="1">
+    <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:id="@+id/horizontal_cycle_cars"
+        app:icvp_interpolator="@android:anim/accelerate_decelerate_interpolator"
+        app:icvp_scroll_duration="250"
+        app:icvp_center_page_scale_offset="10dp"
+        app:icvp_min_page_scale_offset="5dp"
+        app:icvp_max_page_scale="0.8"
+        app:icvp_min_page_scale="0.55"
+        app:icvp_medium_scaled="false">
+    </com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
+    <LinearLayout
+        style="@style/HorizontalLinearLayout">
+        <Button
+            android:id="@+id/showCarDetailsButton"
+            style="@style/YourCarButton"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp"
+            android:text="Car Details" />
+
+        <Button
+            android:id="@+id/orderCarButton"
+            style="@style/YourCarButton"
+            android:text="Order Car"
+            android:textSize="25dp"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

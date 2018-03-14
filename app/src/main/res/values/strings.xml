@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TakeandGo2</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="there_is_no_open_reservation_in_your_name">There is no open reservation in your name</string>
+    <string name="please_enter_information_to_help_determine_your_payment">please enter information to help determine your payment:</string>
+    <string name="how_many_kilometers_did_you_drive">How many kilometers did you drive?</string>
+    <string name="did_you_add_fuel">Did you add fuel?</string>
+    <string name="how_much_did_you_pay_for_fuel">How much did you pay for fuel?</string>
+    <string name="please_wait_while_loading">please wait while loading...</string>
+</resources>

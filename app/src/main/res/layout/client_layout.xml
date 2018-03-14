@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Client Details"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        style="@style/TextViewCategoryStyle"/>
+    <EditText
+        android:id="@+id/editTextClientID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Identification Number"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/editTextClientName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Name"
+        android:layout_marginBottom="4dp"/>
+    <EditText
+        android:id="@+id/editTextClientLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Last Name"
+        android:layout_marginBottom="4dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Info"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        style="@style/TextViewCategoryStyle"/>
+    <EditText
+        android:id="@+id/editTextClientPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Cellphone Number"
+        android:layout_marginBottom="4dp" />
+    <EditText
+        android:id="@+id/editTextClientEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email Address"
+        android:layout_marginBottom="4dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Verification"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="4dp"
+        style="@style/TextViewCategoryStyle"/>
+    <EditText
+        android:id="@+id/editTextClientCreditNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Credit Card Number"
+        android:layout_marginBottom="4dp" />
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/closeReservLayout"
+        android:text="@string/please_enter_information_to_help_determine_your_payment"
+        android:textColor="#660029"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/closeReservLayout"
+        android:text="How many kilometers did you drive?"
+        android:textAlignment="center"
+        android:gravity="center_vertical"/>
+    <EditText
+        android:id="@+id/closeRsrvKilometers"
+        style="@style/closeReservLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text=""/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        style="@style/HorizontalLinearLayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/closeReservLayout"
+            android:text="Did you add fuel? "
+            android:layout_marginRight="0dp"/>
+        <CheckBox
+            android:id="@+id/closeRsrvAddedFuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textSize="15dp"
+            android:text="Yes"/>
+        <CheckBox
+            android:id="@+id/closeRsrvNoAddedFuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="15dp"
+            android:text="No"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:id="@+id/closeRsrvFuelLayout">
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            style="@style/closeReservLayout"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="How much did you pay for fuel?">
+        </TextView>
+        <EditText
+            android:id="@+id/closeRsrvFuelPay"
+            style="@style/closeReservLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text=""/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submitCloseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="s  u  b  m  i  t "
+        />
+
+</LinearLayout>

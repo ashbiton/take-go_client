@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.aviya.takeandgo2.controller.fragment.AboutUsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Connect us"
+        android:textSize="40dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:gravity ="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="70dp"/>
+    <Button
+        android:id="@+id/aboutDailButton"
+        android:text="   050 229 3998"
+        style="@style/AboutUsTextViewStyle"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_action_dial"/>
+
+    <Button
+        android:id="@+id/aboutMailButton"
+        style="@style/AboutUsTextViewStyle"
+        android:textSize="20dp"
+        android:text="   service@takengo.com"
+        android:drawableLeft="@drawable/ic_action_mail"/>
+    <Button
+        android:id="@+id/aboutWebsiteButton"
+        style="@style/AboutUsTextViewStyle"
+        android:textSize="20dp"
+        android:text="   www.takengo.com"
+        android:drawableLeft="@drawable/ic_action_website"/>
+    <Button
+        android:id="@+id/aboutLocationButton"
+        style="@style/AboutUsTextViewStyle"
+        android:textSize="20dp"
+        android:text="   Bracha 25 Kedumim"
+        android:drawableLeft="@drawable/ic_action_location"/>
+
+</LinearLayout>

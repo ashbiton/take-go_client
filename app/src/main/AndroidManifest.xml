@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aviya.takeandgo2">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name=".controller.ReservationUpdateService"
+            android:exported="false"></service>
+        <receiver android:name=".controller.ReservationUpdateReceiver">
+            <intent-filter>
+                <action android:name="CAR_CHANGE"></action>
+            </intent-filter>
+        </receiver>
+        <activity android:name=".controller.activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".controller.activity.AddActivity" />
+        <activity
+            android:name=".controller.activity.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL">
+                </action>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

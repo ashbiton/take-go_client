@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aviya.takeandgo2.controller.fragment.StartFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take and Go"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:textColor="#b3b3b3"/>
+
+</FrameLayout>

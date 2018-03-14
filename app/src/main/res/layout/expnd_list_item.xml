@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            style="@style/HorizontalLinearLayout">
+        <TextView
+            style="@style/BranchListHeaderTextView"
+            android:textSize="15dp"
+            android:text="Branch number"/>
+        <TextView
+            android:id="@+id/branchNumberView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/HorizontalLinearLayout">
+            <TextView
+                style="@style/BranchListHeaderTextView"
+                android:textSize="15dp"
+                android:text="Address"/>
+            <TextView
+                android:id="@+id/branchAddressNumberView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                 android:text="45"/>
+            <TextView
+                android:id="@+id/branchAddressStreetView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Shlomtuzion"/>
+            <TextView
+                android:id="@+id/branchAddressCityView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="Peta Tikva"/>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/HorizontalLinearLayout">
+            <TextView
+                style="@style/BranchListHeaderTextView"
+                android:textSize="15dp"
+                android:text="Parking spaces"/>
+            <TextView
+                android:id="@+id/branchParkingSpaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"/>
+        </LinearLayout>
+        <LinearLayout
+        style="@style/HorizontalLinearLayout">
+        <TextView
+            style="@style/BranchListHeaderTextView"
+            android:text="Available cars"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/branchCarsNumberView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="150"/>
+            <!--<Button
+                android:id="@+id/branchShowCarsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:text="watch all cars"
+                android:textAllCaps="false"
+                android:background="#00ffffff"/>-->
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+    <ListView
+        android:id="@+id/carListInExpndList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="10dp"
+        android:layout_margin="3dp">
+    </ListView>
+    </LinearLayout>
+
+</LinearLayout>

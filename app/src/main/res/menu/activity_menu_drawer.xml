@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_free_cars"
+            android:icon="@drawable/ic_action_car"
+            android:title="All Free Cars" />
+        <item
+            android:id="@+id/nav_branches"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Our Branches" />
+        <item
+            android:id="@+id/nav_client_car"
+            android:icon="@drawable/ic_action_person"
+            android:title="Your Car" />
+        <item
+            android:id="@+id/nav_company_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_menu_log_out"
+            android:title="Log Out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item
+                android:id="@+id/nav_log_out"
+                android:icon="@drawable/ic_menu_log_out"
+                android:title="Log Out" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />-->
+        </menu>
+    </item>
+
+</menu>
